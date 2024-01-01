@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.site-header {
+  background-color: #3498db;
+  height: 130px;
+}
+
+.site-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h2 {
+  border-bottom: 1px solid #3498db;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+h3 {
+  margin-bottom: 10px;
+}
+
+button {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.logo img {
+  max-width: 100%;
+  height: auto;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease-in-out;
+}
+
+.menu a:hover {
+  color: #ecf0f1;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.sobre-a-loja {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.imagem-loja img {
+  max-width: 100%;
+  margin-bottom: 20px;
+  width: 500px;
+}
+
+.texto-loja {
+  max-width: 600px;
+}
+
+.produtos {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.produto {
+  width: calc(25% - 20px);
+  margin: 0 10px 20px;
+  text-align: center;
+  border: 1px solid #3498db;
+}
+
+.produto img {
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+
+.btn-adicionar-carrinho {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+  .logo img {
+    width: 80px;
+  }
+
+  .menu li {
+    margin-right: 10px;
+  }
+
+  .produto {
+    width: calc(50% - 20px);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .sobre-a-loja {
+    flex-direction: row;
+  }
+
+  .imagem-loja img {
+    margin-bottom: 0;
+  }
+
+  .texto-loja {
+    max-width: 400px;
+    margin-left: 30px;
+  }
+
+  .produto {
+    width: calc(25% - 20px);
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .produto {
+    width: calc(100% - 20px);
+  }
+}
